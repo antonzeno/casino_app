@@ -1,18 +1,15 @@
-import React from "react";
+import React from "react"
 
-import { Form, FormControl, Nav, Navbar } from "react-bootstrap";
-import "./SearchNav.css";
+import { Form, FormControl, Nav, Navbar } from "react-bootstrap"
+import "./SearchNav.css"
 
-const SearchNav = (props) => {
+const SearchNav = props => {
   return (
     <>
       <Navbar style={{ height: "62px", backgroundColor: "#333333" }}>
         <div className="container">
-          <Navbar.Brand
-            href="#home"
-            style={{ fontSize: "30px", color: "gray" }}
-          >
-            <img src={props.logo}></img> {props.name}
+          <Navbar.Brand href="#home" style={{ fontSize: "30px", color: "gray" }}>
+            <img src={props.logo} alt="icon"></img> {props.name}
           </Navbar.Brand>
           <Nav className="mr-auto"></Nav>
           <Form inline>
@@ -23,14 +20,14 @@ const SearchNav = (props) => {
               style={{
                 width: "204px",
                 padding: "17px",
-                fontFamily: "FontAwesome",
+                fontFamily: "FontAwesome"
               }}
             />
           </Form>
         </div>
       </Navbar>
     </>
-  );
-};
+  )
+}
 
-export default SearchNav;
+export default SearchNav
