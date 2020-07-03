@@ -19,7 +19,7 @@ const SearchNav = (props) => {
             <FormControl
               type="text"
               placeholder="&#xF002;"
-              className="mr-sm-2"
+              className="search-text mr-sm-2"
               style={{
                 width: "204px",
                 padding: "17px",

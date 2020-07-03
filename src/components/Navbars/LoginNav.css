@@ -41,3 +41,11 @@ input {
   font-size: 20.5px;
   cursor: pointer;
 }
+
+.text-css::placeholder {
+  color: white !important;
+}
+
+.text-css input {
+  color: white !important;
+}

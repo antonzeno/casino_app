@@ -1,7 +1,11 @@
-input {
+/* input {
+  color: yellow !important;
+} */
+
+.search-text::placeholder {
   color: yellow !important;
 }
 
-::placeholder {
+.search-text text {
   color: yellow !important;
 }
