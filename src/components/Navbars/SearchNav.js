@@ -8,8 +8,20 @@ const SearchNav = props => {
     <>
       <Navbar style={{ height: "62px", backgroundColor: "#333333" }}>
         <div className="container">
-          <Navbar.Brand href="#home" style={{ fontSize: "30px", color: "gray" }}>
-            <img src={props.logo} alt="icon"></img> {props.name}
+          <Navbar.Brand
+            href="#home"
+            style={{ fontSize: "30px", color: "gray", position: "relative" }}
+          >
+            <img src={props.logo} alt="icon"></img>
+            {props.diamond && (
+              <img
+                src={props.diamond}
+                alt="diamond"
+                style={{ position: "absolute", top: "38px", left: "45px" }}
+              />
+            )}
+
+            {props.name}
           </Navbar.Brand>
           <Nav className="mr-auto"></Nav>
           <Form inline>

@@ -1,30 +1,20 @@
-import React from "react";
-import {
-  FormControl,
-  Form,
-  Button,
-  Navbar,
-  InputGroup,
-  Nav,
-} from "react-bootstrap";
-import UkFlag from "../../images/uk.png";
+import React from "react"
+import { FormControl, Form, Button, Navbar, InputGroup, Nav } from "react-bootstrap"
+import UkFlag from "../../images/uk.png"
 
-import "./LoginNav.css";
+import "./LoginNav.css"
 
 const LoginNav = () => {
   return (
-    <Navbar
-      className=" justify-content-between login-nav"
-      style={{ backgroundColor: "#333333" }}
-    >
+    <Navbar className=" justify-content-between login-nav" style={{ backgroundColor: "#333333" }}>
       <Form inline>
-        <InputGroup style={{ width: "271px" }}>
+        <InputGroup style={{ width: "271px" }} className="mb-1">
           <FormControl
             className="text-css"
             style={{
               padding: "13px",
               borderRadius: "2px",
-              fontFamily: "FontAwesome",
+              fontFamily: "FontAwesome"
             }}
             placeholder="&#xf007;    Username"
             aria-label="Username"
@@ -35,7 +25,7 @@ const LoginNav = () => {
             style={{
               padding: "13px",
               borderRadius: "2px",
-              fontFamily: "FontAwesome",
+              fontFamily: "FontAwesome"
             }}
             placeholder="&#xf084;   Password"
             aria-label="Password"
@@ -43,6 +33,7 @@ const LoginNav = () => {
           />
         </InputGroup>
         <a
+          className="mb-1"
           href="#help"
           style={{
             display: "block",
@@ -51,50 +42,56 @@ const LoginNav = () => {
             border: "1px solid black",
             color: "white",
             margin: "0 10px",
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
           ?
         </a>
-        <Button
-          style={{
-            width: "81px",
-            height: "26px",
-            marginLeft: "5px",
-            padding: "5px",
-            display: "inline-flex",
-            alignItems: "center",
-            borderRadius: "2px",
-            fontWeight: "bold",
-            paddingLeft: "13px",
-          }}
-          variant="warning"
-        >
-          LOGIN
-        </Button>
-        <Button
-          style={{
-            width: "107px",
-            height: "26px",
-            marginLeft: "10px",
-            display: "inline-flex",
-            alignItems: "center",
-            borderRadius: "2px",
-            fontWeight: "bold",
-          }}
-          variant="warning"
-        >
-          REGISTER
-        </Button>
+
+        <div className="mb-1">
+          <Button
+            style={{
+              width: "81px",
+              height: "26px",
+              marginLeft: "5px",
+              padding: "5px",
+              display: "inline-flex",
+              alignItems: "center",
+              borderRadius: "2px",
+              fontWeight: "bold",
+              paddingLeft: "13px"
+            }}
+            variant="warning"
+          >
+            LOGIN
+          </Button>
+          <Button
+            className="register-button"
+            style={{
+              width: "107px",
+              height: "26px",
+              marginLeft: "10px",
+              display: "inline-flex",
+              alignItems: "center",
+              borderRadius: "2px",
+              fontWeight: "bold"
+            }}
+            variant="warning"
+          >
+            REGISTER
+          </Button>
+        </div>
       </Form>
 
       <Nav className="mr-auto"></Nav>
-      <div style={{}}>
+      <div className="mb-1">
         <i className="fa fa-facebook-square facebook-icon"></i>
         <i className="fa fa-instagram instagram-icon"></i>
       </div>
-      <img src={UkFlag} alt="UK" />
+
+      <img src={UkFlag} alt="UK" className="mb-1" />
       <select
+        className="mb-1"
         name="Eng"
         id="Eng"
         style={{
@@ -102,13 +99,13 @@ const LoginNav = () => {
           color: "#AEAFB4",
           border: "none",
           outline: "none",
-          display: "inline-block",
+          display: "inline-block"
         }}
       >
         <option value="uk">Eng</option>
       </select>
     </Navbar>
-  );
-};
+  )
+}
 
-export default LoginNav;
+export default LoginNav

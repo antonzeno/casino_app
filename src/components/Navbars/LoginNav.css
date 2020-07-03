@@ -6,9 +6,15 @@ input {
   border: none !important;
 }
 
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
   .login-nav {
     display: none;
+  }
+} */
+
+@media (max-width: 695px) {
+  .register-button button {
+    margin-left: "40px" !important;
   }
 }
 

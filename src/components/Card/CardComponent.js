@@ -3,14 +3,15 @@ import { Card } from "react-bootstrap"
 
 import cardImage from "../../images/test.jpg"
 
-const CardComponent = () => {
+const CardComponent = props => {
   return (
     <>
       <Card
         className="mb-4"
         style={{
-          height: "250px",
-          backgroundColor: "#0A0A0A",
+          height: "240px",
+          width: `${props.width}`,
+          backgroundColor: `${props.backgroundColor}`,
           borderRadius: "25px",
           position: "relative"
         }}
@@ -20,17 +21,37 @@ const CardComponent = () => {
           variant="top"
           src={cardImage}
           style={{
-            borderRadius: "15px",
+            borderRadius: "18px",
             width: "91%",
             height: "80%",
             position: "absolute",
             left: "4.5%",
             top: "2%",
-            border: "2px solid #F4C042"
+            border: "2.72px solid #F4C042"
           }}
         />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title
+            style={{
+              color: "white",
+              position: "absolute",
+              bottom: "2px",
+              left: "15%",
+              fontSize: "16px"
+            }}
+          >
+            Title of game{" "}
+            <span
+              style={{
+                fontFamily: "FontAwesome",
+                color: `${props.tagColor}`,
+                fontSize: "22px",
+                display: `${props.displayTag}`
+              }}
+            >
+              &#xf02e;
+            </span>
+          </Card.Title>
         </Card.Body>
       </Card>
     </>
