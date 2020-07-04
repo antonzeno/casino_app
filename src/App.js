@@ -10,7 +10,7 @@ import BottomCardBox from "./components/BottomCardBox/BottomCardBox"
 
 import logo from "./images/roulette.png"
 import secondLogo from "./images/path.png"
-import diamond from "./images/diamond.png"
+
 import TopCardBox from "./components/TopCardBox/TopCardBox"
 
 function App() {
@@ -21,11 +21,11 @@ function App() {
       <Banner />
       <TopCardBox />
       <br />
-      <SearchNav name="TOP SLOT GAMES" logo={logo} />
+      <SearchNav name="TOP SLOT GAMES" logo={logo} showStars={true} />
       <br />
       <CardBox />
       <br />
-      <SearchNav name="  VIDEO POKER" logo={secondLogo} diamond={diamond} />
+      <SearchNav name="  VIDEO POKER" logo={secondLogo} showDiamond={true} />
       <br />
       <BottomCardBox />
       <br />

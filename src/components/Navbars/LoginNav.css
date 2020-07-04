@@ -13,7 +13,7 @@ input {
 } */
 
 @media (max-width: 695px) {
-  .register-button button {
+  .register-button {
     margin-left: "40px" !important;
   }
 }

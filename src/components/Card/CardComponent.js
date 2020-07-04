@@ -9,11 +9,12 @@ const CardComponent = props => {
       <Card
         className="mb-4"
         style={{
-          height: "240px",
-          width: `${props.width}`,
+          height: `${props.height}`,
+          // width: `${props.width}`,
           backgroundColor: `${props.backgroundColor}`,
-          borderRadius: "25px",
-          position: "relative"
+          borderRadius: "30px",
+          border: "none"
+          // position: "relative"
         }}
       >
         <Card.Img
@@ -21,23 +22,26 @@ const CardComponent = props => {
           variant="top"
           src={cardImage}
           style={{
-            borderRadius: "18px",
-            width: "91%",
-            height: "80%",
-            position: "absolute",
-            left: "4.5%",
-            top: "2%",
-            border: "2.72px solid #F4C042"
+            borderRadius: "23px",
+            width: "93%",
+            height: `${props.imageHeight}`,
+            // position: "absolute",
+            // left: "4.5%",
+            // top: "2%",
+            border: `${props.border}`,
+            // margin: "6px 6px -9px 6px"
+            margin: "5px auto -15px auto"
           }}
         />
         <Card.Body>
           <Card.Title
             style={{
               color: "white",
-              position: "absolute",
-              bottom: "2px",
-              left: "15%",
-              fontSize: "16px"
+              // position: "absolute",
+              // bottom: "2px",
+              // left: "15%",
+              fontSize: "16px",
+              textAlign: "center"
             }}
           >
             Title of game{" "}

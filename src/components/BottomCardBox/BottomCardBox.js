@@ -18,17 +18,56 @@ const BottomCardBox = props => {
               height: "30px",
               position: "absolute",
               left: "-50px",
-              top: "50%",
+              top: "40%",
               cursor: "pointer"
             }}
           />
-          <CardComponent backgroundColor={"transparent"} displayTag={"none"} />
-
-          <CardComponent backgroundColor={"transparent"} displayTag={"none"} />
+          <CardComponent
+            backgroundColor={"transparent"}
+            displayTag={"none"}
+            border={"2.72px solid #F4C042"}
+            height={"250px"}
+            imageHeight={"75%"}
+          />
+          {/* {small screen} */}
           <div class="w-100 d-none d-sm-block d-md-none"></div>
-          <CardComponent backgroundColor={"transparent"} displayTag={"none"} />
-          <CardComponent backgroundColor={"transparent"} displayTag={"none"} />
-          <CardComponent backgroundColor={"transparent"} displayTag={"none"} />
+
+          <CardComponent
+            backgroundColor={"transparent"}
+            displayTag={"none"}
+            border={"2.72px solid #F4C042"}
+            height={"250px"}
+            imageHeight={"75%"}
+          />
+
+          {/* {medium screen} */}
+          <div class="w-100 d-none d-md-block d-lg-none"></div>
+          <div class="w-100 d-none d-lg-block d-xl-none"></div>
+
+          <CardComponent
+            backgroundColor={"transparent"}
+            displayTag={"none"}
+            border={"2.72px solid #F4C042"}
+            height={"250px"}
+            imageHeight={"75%"}
+          />
+          {/* {small   screen} */}
+          <div class="w-100 d-none d-sm-block d-md-none"></div>
+
+          <CardComponent
+            backgroundColor={"transparent"}
+            displayTag={"none"}
+            border={"2.72px solid #F4C042"}
+            height={"250px"}
+            imageHeight={"75%"}
+          />
+          <CardComponent
+            backgroundColor={"transparent"}
+            displayTag={"none"}
+            border={"2.72px solid #F4C042"}
+            height={"250px"}
+            imageHeight={"75%"}
+          />
 
           <img
             src={next}
@@ -38,7 +77,7 @@ const BottomCardBox = props => {
               height: "30px",
               position: "absolute",
               right: "-50px",
-              top: "50%",
+              top: "40%",
               cursor: "pointer"
             }}
           />

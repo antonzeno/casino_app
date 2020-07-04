@@ -3,6 +3,11 @@ import React from "react"
 import { Form, FormControl, Nav, Navbar } from "react-bootstrap"
 import "./SearchNav.css"
 
+import diamond from "../../images/diamond.png"
+import bigStar from "../../images/star1.png"
+import mediumStar from "../../images/star2.png"
+import smallStar from "../../images/star3.png"
+
 const SearchNav = props => {
   return (
     <>
@@ -12,13 +17,33 @@ const SearchNav = props => {
             href="#home"
             style={{ fontSize: "30px", color: "gray", position: "relative" }}
           >
-            <img src={props.logo} alt="icon"></img>
-            {props.diamond && (
+            <img src={props.logo} alt="logo"></img>
+            {props.showDiamond && (
               <img
-                src={props.diamond}
+                src={diamond}
                 alt="diamond"
                 style={{ position: "absolute", top: "38px", left: "45px" }}
               />
+            )}
+
+            {props.showStars && (
+              <>
+                <img
+                  src={bigStar}
+                  alt="Star"
+                  style={{ position: "absolute", top: "-3px", left: "-15px" }}
+                />
+                <img
+                  src={mediumStar}
+                  alt="Star"
+                  style={{ position: "absolute", top: "20px", left: "-20px" }}
+                />
+                <img
+                  src={smallStar}
+                  alt="Star"
+                  style={{ position: "absolute", top: "40px", left: "-14px" }}
+                />
+              </>
             )}
 
             {props.name}
@@ -30,7 +55,7 @@ const SearchNav = props => {
               placeholder="&#xF002;"
               className="search-text mr-sm-2"
               style={{
-                width: "204px",
+                width: "160px",
                 padding: "17px",
                 fontFamily: "FontAwesome"
               }}
