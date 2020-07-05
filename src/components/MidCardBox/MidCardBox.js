@@ -44,7 +44,7 @@ const CardBox = () => {
         />
 
         {/* {wrap every 2 on sm} */}
-        <div class="w-100 d-none d-sm-block d-md-none"></div>
+        <div className="w-100 d-none d-sm-block d-md-none"></div>
 
         <CardComponent
           playButton={true}
@@ -56,9 +56,9 @@ const CardBox = () => {
           height={"250px"}
         />
         {/* {wrap every 3 on md} */}
-        <div class="w-100 d-none d-md-block d-lg-none"></div>
+        <div className="w-100 d-none d-md-block d-lg-none"></div>
         {/* {wrap every 3 on lg} */}
-        <div class="w-100 d-none d-lg-block d-xl-none"></div>
+        <div className="w-100 d-none d-lg-block d-xl-none"></div>
 
         <CardComponent
           playButton={true}
@@ -70,7 +70,7 @@ const CardBox = () => {
           height={"250px"}
         />
         {/* {wrap every 2 on sm} */}
-        <div class="w-100 d-none d-sm-block d-md-none"></div>
+        <div className="w-100 d-none d-sm-block d-md-none"></div>
 
         <CardComponent
           newItem={true}

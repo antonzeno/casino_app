@@ -26,8 +26,8 @@ const TopCardBox = props => {
           />
 
           {/* {Small and medium screens} */}
-          <div class="w-100 d-none d-md-block d-lg-none"></div>
-          <div class="w-100 d-none d-sm-block d-md-none"></div>
+          <div className="w-100 d-none d-md-block d-lg-none"></div>
+          <div className="w-100 d-none d-sm-block d-md-none"></div>
           <CardComponent
             backgroundColor={"#0A0A0A"}
             displayTag={"none"}

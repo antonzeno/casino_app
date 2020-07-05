@@ -6,7 +6,7 @@ import LoginNav from "./components/Navbars/LoginNav"
 import SearchNav from "./components/Navbars/SearchNav"
 import Banner from "./components/Banner/Banner"
 import TopCardBox from "./components/TopCardBox/TopCardBox"
-import CardBox from "./components/CardBox/CardBox"
+import MidCardBox from "./components/MidCardBox/MidCardBox"
 import BottomCardBox from "./components/BottomCardBox/BottomCardBox"
 
 import logo from "./images/roulette.png"
@@ -22,7 +22,7 @@ function App() {
       <br />
       <SearchNav name=" TOP SLOT GAMES" logo={logo} showStars={true} />
       <br />
-      <CardBox />
+      <MidCardBox />
       <br />
       <SearchNav name=" VIDEO POKER" logo={secondLogo} showDiamond={true} />
       <br />
