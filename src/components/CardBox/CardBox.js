@@ -24,16 +24,21 @@ const CardBox = () => {
         />
 
         <CardComponent
+          playButton={true}
+          newItem={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />
         <CardComponent
+          playButton={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />
@@ -42,9 +47,11 @@ const CardBox = () => {
         <div class="w-100 d-none d-sm-block d-md-none"></div>
 
         <CardComponent
+          playButton={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />
@@ -54,9 +61,11 @@ const CardBox = () => {
         <div class="w-100 d-none d-lg-block d-xl-none"></div>
 
         <CardComponent
+          playButton={true}
           tagColor={"#FFDB45"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />
@@ -64,17 +73,22 @@ const CardBox = () => {
         <div class="w-100 d-none d-sm-block d-md-none"></div>
 
         <CardComponent
+          newItem={true}
+          playButton={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />
 
         <CardComponent
+          playButton={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
+          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
         />

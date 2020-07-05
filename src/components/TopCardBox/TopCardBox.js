@@ -14,6 +14,7 @@ const TopCardBox = props => {
             border={"1px solid #707070"}
             height={"250px"}
             imageHeight={"83%"}
+            fontColor={"black"}
           />
           <CardComponent
             backgroundColor={"#0A0A0A"}
@@ -21,6 +22,7 @@ const TopCardBox = props => {
             border={"3.44px solid #808080"}
             height={"250px"}
             imageHeight={"83%"}
+            fontColor={"white"}
           />
 
           {/* {Small and medium screens} */}
@@ -32,6 +34,7 @@ const TopCardBox = props => {
             border={"3.44px solid #808080"}
             height={"250px"}
             imageHeight={"83%"}
+            fontColor={"white"}
           />
           <CardComponent
             backgroundColor={"#0A0A0A"}
@@ -39,6 +42,7 @@ const TopCardBox = props => {
             border={"3.44px solid #808080"}
             height={"250px"}
             imageHeight={"83%"}
+            fontColor={"white"}
           />
           <CardComponent
             backgroundColor={"#0A0A0A"}
@@ -46,6 +50,7 @@ const TopCardBox = props => {
             border={"3.44px solid #808080"}
             height={"250px"}
             imageHeight={"83%"}
+            fontColor={"white"}
           />
         </CardDeck>
       </div>

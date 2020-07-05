@@ -2,6 +2,8 @@ import React from "react"
 import { Card } from "react-bootstrap"
 
 import cardImage from "../../images/test.jpg"
+import playButton from "../../images/playbutton.png"
+import newItem from "../../images/newItem.png"
 
 const CardComponent = props => {
   return (
@@ -13,8 +15,8 @@ const CardComponent = props => {
           // width: `${props.width}`,
           backgroundColor: `${props.backgroundColor}`,
           borderRadius: "30px",
+          cursor: "pointer",
           border: "none"
-          // position: "relative"
         }}
       >
         <Card.Img
@@ -22,28 +24,53 @@ const CardComponent = props => {
           variant="top"
           src={cardImage}
           style={{
+            position: "relative",
             borderRadius: "23px",
             width: "93%",
             height: `${props.imageHeight}`,
-            // position: "absolute",
-            // left: "4.5%",
-            // top: "2%",
             border: `${props.border}`,
-            // margin: "6px 6px -9px 6px"
             margin: "5px auto -15px auto"
           }}
         />
+
+        {props.playButton && (
+          <Card.Img
+            className="img-fluid"
+            src={playButton}
+            style={{
+              position: "absolute",
+              left: "0",
+              top: "0",
+              bottom: "65px",
+              right: "0",
+              margin: "auto",
+              width: "85px"
+            }}
+          />
+        )}
+
+        {props.newItem && (
+          <Card.Img
+            className="img-fluid"
+            src={newItem}
+            style={{
+              position: "absolute",
+              top: "-10px",
+              right: "-20px",
+
+              width: "80px"
+            }}
+          />
+        )}
+
         <Card.Body>
           <Card.Title
             style={{
-              color: "white",
-              // position: "absolute",
-              // bottom: "2px",
-              // left: "15%",
               fontSize: "16px",
               textAlign: "center",
               fontFamily: "Source Sans Pro",
-              margin: "0 3%" //space for float: right for the span
+              margin: "0 3%", //space for float: right for the span,
+              color: `${props.fontColor}`
             }}
           >
             Ray of light{" "}

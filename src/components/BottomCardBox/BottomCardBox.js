@@ -27,16 +27,19 @@ const BottomCardBox = props => {
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
+            fontColor={"white"}
             imageHeight={"75%"}
           />
           {/* {small screen} */}
           <div class="w-100 d-none d-sm-block d-md-none"></div>
 
           <CardComponent
+            newItem={true}
             backgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
+            fontColor={"white"}
             imageHeight={"75%"}
           />
 
@@ -49,6 +52,7 @@ const BottomCardBox = props => {
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
+            fontColor={"white"}
             imageHeight={"75%"}
           />
           {/* {small   screen} */}
@@ -59,6 +63,7 @@ const BottomCardBox = props => {
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
+            fontColor={"white"}
             imageHeight={"75%"}
           />
           <CardComponent
@@ -66,6 +71,7 @@ const BottomCardBox = props => {
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
+            fontColor={"white"}
             imageHeight={"75%"}
           />
 
