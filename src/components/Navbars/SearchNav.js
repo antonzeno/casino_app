@@ -15,7 +15,7 @@ const SearchNav = props => {
         <div className="container">
           <Navbar.Brand
             href="#home"
-            style={{ fontSize: "30px", color: "gray", position: "relative" }}
+            style={{ fontSize: "30px", color: "#A7A6A4", position: "relative" }}
           >
             <img src={props.logo} alt="logo"></img>
             {props.showDiamond && (
@@ -46,7 +46,7 @@ const SearchNav = props => {
               </>
             )}
 
-            {props.name}
+            <span style={{ fontFamily: "Oswald, sans-serif" }}>{props.name}</span>
           </Navbar.Brand>
           <Nav className="mr-auto"></Nav>
           <Form inline>
@@ -57,7 +57,7 @@ const SearchNav = props => {
               style={{
                 width: "160px",
                 padding: "17px",
-                fontFamily: "FontAwesome"
+                fontFamily: "FontAwesome, Open Sans, sans-serif"
               }}
             />
           </Form>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import React from "react"
+import { Nav, Navbar } from "react-bootstrap"
 
 const MainNav = () => {
   return (
@@ -11,6 +11,7 @@ const MainNav = () => {
         borderTop: "1px solid  #302e2e",
         boxShadow: "inset 0 1px 0 #3e3e3e",
         backgroundColor: "#333333",
+        fontFamily: "Open Sans, sans-serif"
       }}
     >
       <Navbar.Brand href="#">LOGO</Navbar.Brand>
@@ -36,7 +37,7 @@ const MainNav = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  );
-};
+  )
+}
 
-export default MainNav;
+export default MainNav

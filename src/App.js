@@ -21,11 +21,11 @@ function App() {
       <Banner />
       <TopCardBox />
       <br />
-      <SearchNav name="TOP SLOT GAMES" logo={logo} showStars={true} />
+      <SearchNav name=" TOP SLOT GAMES" logo={logo} showStars={true} />
       <br />
       <CardBox />
       <br />
-      <SearchNav name="  VIDEO POKER" logo={secondLogo} showDiamond={true} />
+      <SearchNav name=" VIDEO POKER" logo={secondLogo} showDiamond={true} />
       <br />
       <BottomCardBox />
       <br />

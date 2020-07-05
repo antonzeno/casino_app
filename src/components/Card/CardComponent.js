@@ -41,16 +41,19 @@ const CardComponent = props => {
               // bottom: "2px",
               // left: "15%",
               fontSize: "16px",
-              textAlign: "center"
+              textAlign: "center",
+              fontFamily: "Source Sans Pro",
+              margin: "0 3%" //space for float: right for the span
             }}
           >
-            Title of game{" "}
+            Ray of light{" "}
             <span
               style={{
                 fontFamily: "FontAwesome",
                 color: `${props.tagColor}`,
                 fontSize: "22px",
-                display: `${props.displayTag}`
+                display: `${props.displayTag}`,
+                float: "right"
               }}
             >
               &#xf02e;

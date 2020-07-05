@@ -14,7 +14,7 @@ const LoginNav = () => {
             style={{
               padding: "13px",
               borderRadius: "2px",
-              fontFamily: "FontAwesome"
+              fontFamily: "FontAwesome, Open Sans, sans-serif"
             }}
             placeholder="&#xf007;    Username"
             aria-label="Username"
@@ -25,7 +25,7 @@ const LoginNav = () => {
             style={{
               padding: "13px",
               borderRadius: "2px",
-              fontFamily: "FontAwesome"
+              fontFamily: "FontAwesome, Open Sans, sans-serif"
             }}
             placeholder="&#xf084;   Password"
             aria-label="Password"

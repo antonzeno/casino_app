@@ -6,7 +6,7 @@ import { CardDeck } from "react-bootstrap"
 const TopCardBox = props => {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ marginTop: "-55px" }}>
         <CardDeck>
           <CardComponent
             backgroundColor={"#D1D114"}
