@@ -2,7 +2,7 @@ import React from "react"
 import CardComponent from "../Card/CardComponent"
 import BigCardComponent from "../Card/BigCardComponent"
 
-import { CardDeck } from "react-bootstrap"
+import { CardDeck, Col } from "react-bootstrap"
 import prev from "../../images/prev.png"
 import next from "../../images/next.png"
 
@@ -23,24 +23,26 @@ const BottomCardBox = props => {
               cursor: "pointer"
             }}
           />
-
-          <BigCardComponent />
-
+          <Col style={{ padding: "0" }} sm={12} md={8} lg={8} xl={4}>
+            <BigCardComponent />
+          </Col>
           {props.items.slice(0, 4).map(item => {
             return (
-              <CardComponent
-                newItem={true}
-                key={item.id}
-                bottomCardBox={true}
-                displayTag={"none"}
-                border={"2.72px solid #F4C042"}
-                height={"250px"}
-                fontColor={"white"}
-                imageHeight={"75%"}
-                cardImage={item.icon}
-                cardTitle={item.description}
-                alt={item.description}
-              />
+              <Col key={item.id} style={{ padding: "0" }} sm={6} md={4} lg={4} xl={2}>
+                <CardComponent
+                  newItem={true}
+                  key={item.id}
+                  bottomCardBox={true}
+                  displayTag={"none"}
+                  border={"2.72px solid #F4C042"}
+                  height={"250px"}
+                  fontColor={"white"}
+                  imageHeight={"75%"}
+                  cardImage={item.icon}
+                  cardTitle={item.description}
+                  alt={item.description}
+                />
+              </Col>
             )
           })}
 

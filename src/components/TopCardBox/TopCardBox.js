@@ -1,7 +1,7 @@
 import React from "react"
 import CardComponent from "../Card/CardComponent"
 
-import { CardDeck } from "react-bootstrap"
+import { CardDeck, Col } from "react-bootstrap"
 
 const TopCardBox = props => {
   return (
@@ -10,16 +10,17 @@ const TopCardBox = props => {
         <CardDeck>
           {props.items.map(item => {
             return (
-              <CardComponent
-                key={item.id}
-                topCardBox={true}
-                displayTag={"none"}
-                height={"250px"}
-                imageHeight={"83%"}
-                cardImage={item.icon}
-                cardTitle={item.description.toUpperCase()}
-                alt={item.description}
-              />
+              <Col key={item.id} style={{ padding: "0" }} xs={12} sm={6} md={4} lg={4} xl>
+                <CardComponent
+                  topCardBox={true}
+                  displayTag={"none"}
+                  height={"250px"}
+                  imageHeight={"83%"}
+                  cardImage={item.icon}
+                  cardTitle={item.description.toUpperCase()}
+                  alt={item.description}
+                />
+              </Col>
             )
           })}
         </CardDeck>
