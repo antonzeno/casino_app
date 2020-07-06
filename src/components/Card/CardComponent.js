@@ -1,7 +1,6 @@
 import React from "react"
 import { Card } from "react-bootstrap"
 
-import cardImage from "../../images/test.jpg"
 import playButton from "../../images/playbutton.png"
 import newItem from "../../images/newItem.png"
 
@@ -12,17 +11,17 @@ const CardComponent = props => {
         className="mb-4"
         style={{
           height: `${props.height}`,
-          // width: `${props.width}`,
           backgroundColor: `${props.backgroundColor}`,
           borderRadius: "30px",
           cursor: "pointer",
-          border: "none"
+          border: "none",
+          paddingLeft: `${props.paddingLeft}`
         }}
       >
         <Card.Img
           className="img-fluid"
           variant="top"
-          src={cardImage}
+          src={props.cardImage}
           style={{
             position: "relative",
             borderRadius: "23px",
@@ -57,7 +56,6 @@ const CardComponent = props => {
               position: "absolute",
               top: "-10px",
               right: "-20px",
-
               width: "80px"
             }}
           />
@@ -70,14 +68,14 @@ const CardComponent = props => {
               textAlign: "center",
               fontFamily: "Source Sans Pro",
               margin: "0 3%", //space for float: right for the span,
-              color: `${props.fontColor}`
+              color: `${props.fontColor ? "black" : "white"}`
             }}
           >
-            Ray of light{" "}
+            {props.cardTitle}
             <span
               style={{
                 fontFamily: "FontAwesome",
-                color: `${props.tagColor}`,
+                color: `${props.yellowTag ? "#FFDB45" : "#262626"}`,
                 fontSize: "22px",
                 display: `${props.displayTag}`,
                 float: "right"

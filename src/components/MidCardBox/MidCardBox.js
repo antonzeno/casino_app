@@ -5,6 +5,12 @@ import { CardDeck } from "react-bootstrap"
 
 import prev from "../../images/prev.png"
 import next from "../../images/next.png"
+import image1 from "../../images/1.png"
+import image2 from "../../images/2.png"
+import image3 from "../../images/3.png"
+import image4 from "../../images/4.png"
+import image5 from "../../images/5.png"
+import image6 from "../../images/6.png"
 
 const CardBox = () => {
   return (
@@ -26,21 +32,21 @@ const CardBox = () => {
         <CardComponent
           playButton={true}
           newItem={true}
-          tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Ray of light"}
+          cardImage={image1}
         />
         <CardComponent
           playButton={true}
-          tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Starburst"}
+          cardImage={image2}
         />
 
         {/* {wrap every 2 on sm} */}
@@ -48,12 +54,12 @@ const CardBox = () => {
 
         <CardComponent
           playButton={true}
-          tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Ray of light"}
+          cardImage={image3}
         />
         {/* {wrap every 3 on md} */}
         <div className="w-100 d-none d-md-block d-lg-none"></div>
@@ -62,12 +68,13 @@ const CardBox = () => {
 
         <CardComponent
           playButton={true}
-          tagColor={"#FFDB45"}
+          yellowTag={true}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Starburst"}
+          cardImage={image4}
         />
         {/* {wrap every 2 on sm} */}
         <div className="w-100 d-none d-sm-block d-md-none"></div>
@@ -75,22 +82,22 @@ const CardBox = () => {
         <CardComponent
           newItem={true}
           playButton={true}
-          tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Ray of light"}
+          cardImage={image5}
         />
 
         <CardComponent
           playButton={true}
-          tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
           border={"2.72px solid #F4C042"}
-          fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
+          cardTitle={"Starburst"}
+          cardImage={image6}
         />
         <img
           src={next}
