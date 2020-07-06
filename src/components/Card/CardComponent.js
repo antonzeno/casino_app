@@ -83,7 +83,7 @@ const CardComponent = props => {
             <span
               style={{
                 fontFamily: "FontAwesome",
-                color: `${props.tagColor}`,
+                color: `${props.cardTitle === "Moon Princess" ? "Yellow" : "#707070"}`,
                 fontSize: "22px",
                 display: `${props.displayTag}`,
                 float: "right"
