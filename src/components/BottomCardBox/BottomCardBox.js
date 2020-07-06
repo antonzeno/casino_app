@@ -23,7 +23,7 @@ const BottomCardBox = props => {
             }}
           />
           <CardComponent
-            backgroundColor={"transparent"}
+            bottomBackgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
@@ -35,7 +35,7 @@ const BottomCardBox = props => {
 
           <CardComponent
             newItem={true}
-            backgroundColor={"transparent"}
+            bottomBackgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
@@ -48,7 +48,7 @@ const BottomCardBox = props => {
           <div className="w-100 d-none d-lg-block d-xl-none"></div>
 
           <CardComponent
-            backgroundColor={"transparent"}
+            bottomBackgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
@@ -59,7 +59,7 @@ const BottomCardBox = props => {
           <div className="w-100 d-none d-sm-block d-md-none"></div>
 
           <CardComponent
-            backgroundColor={"transparent"}
+            bottomBackgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}
@@ -67,7 +67,7 @@ const BottomCardBox = props => {
             imageHeight={"75%"}
           />
           <CardComponent
-            backgroundColor={"transparent"}
+            bottomBackgroundColor={"transparent"}
             displayTag={"none"}
             border={"2.72px solid #F4C042"}
             height={"250px"}

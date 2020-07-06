@@ -33,7 +33,7 @@ class App extends Component {
         <LoginNav />
         <MainNav />
         <Banner />
-        <TopCardBox />
+        <TopCardBox loading={this.state.loading} items={this.state.items} />
         <br />
         <SearchNav name=" TOP SLOT GAMES" logo={logo} showStars={true} />
         <br />

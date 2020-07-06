@@ -17,7 +17,13 @@ const CardComponent = props => {
         style={{
           height: `${props.height}`,
           // width: "500px ",
-          backgroundColor: `${props.backgroundColor}`,
+          backgroundColor: `${
+            props.topBackgroundColor && props.cardTitle === "Lido"
+              ? "yellow"
+              : null || props.bottomBackgroundColor
+              ? "transparent"
+              : "#0A0A0A"
+          }`,
           borderRadius: "30px",
           cursor: "pointer",
           border: "none"
@@ -80,7 +86,7 @@ const CardComponent = props => {
               textAlign: "center",
               fontFamily: "Source Sans Pro",
               margin: "0 -2%", //space for float: right for the span,
-              color: `${props.fontColor}`
+              color: `${props.topBackgroundColor && props.cardTitle === "Lido" ? "black" : "white"}`
             }}
           >
             {props.cardTitle || "Poker"}

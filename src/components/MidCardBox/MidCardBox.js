@@ -31,7 +31,7 @@ const MidCardBox = props => {
               newItem={true}
               playButton={true}
               tagColor={"#262626"}
-              backgroundColor={"#0A0A0A"}
+              midBackgroundColor={"#0A0A0A"}
               border={"2.72px solid #F4C042"}
               fontColor={"white"}
               imageHeight={"75%"}
