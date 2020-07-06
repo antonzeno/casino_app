@@ -11,12 +11,11 @@ const TopCardBox = props => {
           {props.items.map(item => {
             return (
               <CardComponent
-                topBackgroundColor={"#D1D114"}
+                key={item.id}
+                topCardBox={true}
                 displayTag={"none"}
-                border={"1px solid #707070"}
                 height={"250px"}
                 imageHeight={"83%"}
-                fontColor={"black"}
                 cardImage={item.icon}
                 cardTitle={item.description}
                 alt={item.description}

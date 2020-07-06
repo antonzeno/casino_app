@@ -28,12 +28,11 @@ const MidCardBox = props => {
         {props.items.map(item => {
           return (
             <CardComponent
+              key={item.id}
               newItem={true}
               playButton={true}
               tagColor={"#262626"}
-              midBackgroundColor={"#0A0A0A"}
-              border={"2.72px solid #F4C042"}
-              fontColor={"white"}
+              midCardBox={true}
               imageHeight={"75%"}
               height={"250px"}
               cardImage={item.icon}

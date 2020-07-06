@@ -23,8 +23,6 @@ class App extends Component {
     this.setState({ loading: true })
     const res = await axios.get("https://staging.altechlab.com/backend/api/casino/games")
 
-    console.log(res.data)
-
     this.setState({ items: res.data, loading: false })
   }
   render() {
@@ -41,7 +39,7 @@ class App extends Component {
         <br />
         <SearchNav name=" VIDEO POKER" logo={secondLogo} showDiamond={true} />
         <br />
-        <BottomCardBox />
+        <BottomCardBox loading={this.state.loading} items={this.state.items} />
         <br />
       </>
     )

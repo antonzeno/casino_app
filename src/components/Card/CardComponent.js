@@ -10,6 +10,7 @@ const CardComponent = props => {
     e.target.src =
       "https://cdn.neonslots.com/content/thumbs/948x712/New_4_screenshots/Pragmatic_Play/3_Genie_Wishes/00.jpg"
   }
+
   return (
     <>
       <Card
@@ -18,9 +19,9 @@ const CardComponent = props => {
           height: `${props.height}`,
           // width: "500px ",
           backgroundColor: `${
-            props.topBackgroundColor && props.cardTitle === "Lido"
+            props.topCardBox && props.cardTitle === "Lido"
               ? "yellow"
-              : null || props.bottomBackgroundColor
+              : null || props.bottomCardBox
               ? "transparent"
               : "#0A0A0A"
           }`,
@@ -39,7 +40,7 @@ const CardComponent = props => {
             borderRadius: "23px",
             width: "93%",
             height: `${props.imageHeight}`,
-            border: `${props.border}`,
+            border: `${props.topCardBox ? "2px solid #707070" : "2.72px solid #F4C042"}`,
             margin: "5px auto -15px auto"
           }}
         />
@@ -86,7 +87,7 @@ const CardComponent = props => {
               textAlign: "center",
               fontFamily: "Source Sans Pro",
               margin: "0 -2%", //space for float: right for the span,
-              color: `${props.topBackgroundColor && props.cardTitle === "Lido" ? "black" : "white"}`
+              color: `${props.topCardBox && props.cardTitle === "Lido" ? "black" : "white"}`
             }}
           >
             {props.cardTitle || "Poker"}
