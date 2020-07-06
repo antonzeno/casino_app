@@ -31,7 +31,7 @@ const BottomCardBox = props => {
             imageHeight={"75%"}
           />
           {/* {small screen} */}
-          <div class="w-100 d-none d-sm-block d-md-none"></div>
+          <div className="w-100 d-none d-sm-block d-md-none"></div>
 
           <CardComponent
             newItem={true}
@@ -44,8 +44,8 @@ const BottomCardBox = props => {
           />
 
           {/* {medium screen} */}
-          <div class="w-100 d-none d-md-block d-lg-none"></div>
-          <div class="w-100 d-none d-lg-block d-xl-none"></div>
+          <div className="w-100 d-none d-md-block d-lg-none"></div>
+          <div className="w-100 d-none d-lg-block d-xl-none"></div>
 
           <CardComponent
             backgroundColor={"transparent"}
@@ -56,7 +56,7 @@ const BottomCardBox = props => {
             imageHeight={"75%"}
           />
           {/* {small   screen} */}
-          <div class="w-100 d-none d-sm-block d-md-none"></div>
+          <div className="w-100 d-none d-sm-block d-md-none"></div>
 
           <CardComponent
             backgroundColor={"transparent"}

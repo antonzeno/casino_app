@@ -6,13 +6,17 @@ import playButton from "../../images/playbutton.png"
 import newItem from "../../images/newItem.png"
 
 const CardComponent = props => {
+  const addDefaultSrc = e => {
+    e.target.src =
+      "https://cdn.neonslots.com/content/thumbs/948x712/New_4_screenshots/Pragmatic_Play/3_Genie_Wishes/00.jpg"
+  }
   return (
     <>
       <Card
         className="mb-4"
         style={{
           height: `${props.height}`,
-          // width: `${props.width}`,
+          // width: "500px ",
           backgroundColor: `${props.backgroundColor}`,
           borderRadius: "30px",
           cursor: "pointer",
@@ -20,9 +24,10 @@ const CardComponent = props => {
         }}
       >
         <Card.Img
+          onError={addDefaultSrc}
           className="img-fluid"
           variant="top"
-          src={cardImage}
+          src={props.cardImage || cardImage}
           style={{
             position: "relative",
             borderRadius: "23px",
@@ -51,6 +56,7 @@ const CardComponent = props => {
 
         {props.newItem && (
           <Card.Img
+            alt={props.alt}
             className="img-fluid"
             src={newItem}
             style={{
@@ -73,7 +79,7 @@ const CardComponent = props => {
               color: `${props.fontColor}`
             }}
           >
-            Ray of light{" "}
+            {props.cardTitle || "Poker"}
             <span
               style={{
                 fontFamily: "FontAwesome",
