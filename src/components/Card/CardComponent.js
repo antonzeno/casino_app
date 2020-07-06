@@ -63,7 +63,11 @@ const CardComponent = props => {
               position: "absolute",
               top: "-10px",
               right: "-20px",
-
+              visibility: `${
+                props.cardTitle === "Lido" || props.cardTitle === "3 Genie Wishes"
+                  ? "visible"
+                  : "hidden"
+              }`,
               width: "80px"
             }}
           />
@@ -75,7 +79,7 @@ const CardComponent = props => {
               fontSize: "16px",
               textAlign: "center",
               fontFamily: "Source Sans Pro",
-              margin: "0 3%", //space for float: right for the span,
+              margin: "0 -2%", //space for float: right for the span,
               color: `${props.fontColor}`
             }}
           >
@@ -83,7 +87,7 @@ const CardComponent = props => {
             <span
               style={{
                 fontFamily: "FontAwesome",
-                color: `${props.cardTitle === "Moon Princess" ? "Yellow" : "#707070"}`,
+                color: `${props.cardTitle === "Moon Princess" ? "#FFDB45" : "#707070"}`,
                 fontSize: "22px",
                 display: `${props.displayTag}`,
                 float: "right"

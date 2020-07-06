@@ -25,10 +25,10 @@ const MidCardBox = props => {
             cursor: "pointer"
           }}
         />
-
         {props.items.map(item => {
           return (
             <CardComponent
+              newItem={true}
               playButton={true}
               tagColor={"#262626"}
               backgroundColor={"#0A0A0A"}
@@ -43,8 +43,7 @@ const MidCardBox = props => {
           )
         })}
 
-        {/* nqs duhen 6 component */}
-        {/* <CardComponent
+        <CardComponent
           playButton={true}
           tagColor={"#262626"}
           backgroundColor={"#0A0A0A"}
@@ -52,8 +51,7 @@ const MidCardBox = props => {
           fontColor={"white"}
           imageHeight={"75%"}
           height={"250px"}
-        /> */}
-
+        />
         <img
           className="next"
           src={next}
