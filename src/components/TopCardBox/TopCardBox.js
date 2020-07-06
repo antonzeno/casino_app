@@ -17,7 +17,7 @@ const TopCardBox = props => {
                 height={"250px"}
                 imageHeight={"83%"}
                 cardImage={item.icon}
-                cardTitle={item.description}
+                cardTitle={item.description.toUpperCase()}
                 alt={item.description}
               />
             )

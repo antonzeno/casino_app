@@ -19,7 +19,7 @@ const CardComponent = props => {
           height: `${props.height}`,
           // width: "500px ",
           backgroundColor: `${
-            props.topCardBox && props.cardTitle === "Lido"
+            props.topCardBox && props.cardTitle === "LIDO"
               ? "yellow"
               : null || props.bottomCardBox
               ? "transparent"
@@ -87,14 +87,14 @@ const CardComponent = props => {
               textAlign: "center",
               fontFamily: "Source Sans Pro",
               margin: "0 -2%", //space for float: right for the span,
-              color: `${props.topCardBox && props.cardTitle === "Lido" ? "black" : "white"}`
+              color: `${props.topCardBox && props.cardTitle === "LIDO" ? "black" : "white"}`
             }}
           >
             {props.cardTitle || "Poker"}
             <span
               style={{
                 fontFamily: "FontAwesome",
-                color: `${props.cardTitle === "Moon Princess" ? "#FFDB45" : "#707070"}`,
+                color: `${props.cardTitle === "Moon Princess" ? "#FFDB45" : "#262626"}`,
                 fontSize: "22px",
                 display: `${props.displayTag}`,
                 float: "right"

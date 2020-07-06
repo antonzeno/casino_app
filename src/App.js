@@ -39,6 +39,7 @@ class App extends Component {
         <br />
         <SearchNav name=" VIDEO POKER" logo={secondLogo} showDiamond={true} />
         <br />
+        <br />
         <BottomCardBox loading={this.state.loading} items={this.state.items} />
         <br />
       </>
