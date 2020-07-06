@@ -6,30 +6,10 @@ input {
   border: none !important;
 }
 
-/* @media (max-width: 990px) {
-  .login-nav {
-    display: none;
-  }
-} */
-
-@media (max-width: 695px) {
-  .register-button {
+/* @media (max-width: 695px) {
+  button {
     margin-left: "40px" !important;
   }
-}
-
-::placeholder {
-  color: white !important;
-}
-
-/* .register-button {
-  width: "107px" !important;
-  height: "26px" !important;
-  margin-left: "10px" !important;
-  display: "inline-flex" !important;
-  align-items: "center" !important;
-  border-radius: "2px" !important;
-  font-weight: "bold" !important;
 } */
 
 .facebook-icon {

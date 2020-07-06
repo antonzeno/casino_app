@@ -16,8 +16,7 @@ const CardComponent = props => {
       <Card
         className="mb-4"
         style={{
-          height: `${props.height}`,
-          // width: "500px ",
+          height: "250px",
           backgroundColor: `${
             props.topCardBox && props.cardTitle === "LIDO"
               ? "yellow"
@@ -39,7 +38,7 @@ const CardComponent = props => {
             position: "relative",
             borderRadius: "23px",
             width: "93%",
-            height: `${props.imageHeight}`,
+            height: `${props.topCardBox ? "83%" : "75%"}`,
             border: `${props.topCardBox ? "2px solid #707070" : "2.72px solid #F4C042"}`,
             margin: "5px auto -15px auto"
           }}
@@ -96,7 +95,8 @@ const CardComponent = props => {
                 fontFamily: "FontAwesome",
                 color: `${props.cardTitle === "Moon Princess" ? "#FFDB45" : "#262626"}`,
                 fontSize: "22px",
-                display: `${props.displayTag}`,
+                display: `${props.midCardBox ? "inline" : "none"}`,
+                // visibility: `${props.midCardBox ? "visible" : "hidden"}`,    // using display instead
                 float: "right"
               }}
             >

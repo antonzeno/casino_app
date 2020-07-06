@@ -66,7 +66,6 @@ const LoginNav = () => {
             LOGIN
           </Button>
           <Button
-            className="register-button"
             style={{
               width: "107px",
               height: "26px",

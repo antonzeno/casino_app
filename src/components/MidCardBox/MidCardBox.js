@@ -14,8 +14,8 @@ const MidCardBox = props => {
           src={prev}
           alt="Previous"
           style={{
-            width: "30px",
-            height: "30px",
+            width: "23px",
+            height: "38px",
             position: "absolute",
             left: "-50px",
             top: "50%",
@@ -27,13 +27,9 @@ const MidCardBox = props => {
           return (
             <Col key={item.id} style={{ padding: "0" }} xs={12} sm={6} md={4} lg={4} xl={2}>
               <CardComponent
-                key={item.id}
                 newItem={true}
                 playButton={true}
-                tagColor={"#262626"}
                 midCardBox={true}
-                imageHeight={"75%"}
-                height={"250px"}
                 cardImage={item.icon}
                 cardTitle={item.description}
                 alt={item.description}
@@ -43,6 +39,7 @@ const MidCardBox = props => {
         })}
         <Col style={{ padding: "0" }} xs={12} sm={6} md={4} lg={4} xl={2}>
           <CardComponent
+            midCardBox={true}
             playButton={true}
             tagColor={"#262626"}
             backgroundColor={"#0A0A0A"}
@@ -57,8 +54,8 @@ const MidCardBox = props => {
           src={next}
           alt="next"
           style={{
-            width: "30px",
-            height: "30px",
+            width: "23px",
+            height: "38px",
             position: "absolute",
             right: "-50px",
             top: "50%",
