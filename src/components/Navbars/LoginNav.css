@@ -6,11 +6,17 @@ input {
   border: none !important;
 }
 
-/* @media (max-width: 695px) {
-  button {
-    margin-left: "40px" !important;
+@media (max-width: 695px) {
+  .register-button {
+    width: 125px !important;
+    padding: 0 25px !important;
   }
-} */
+
+  .login-button {
+    width: 125px !important;
+    padding: 0 37px !important;
+  }
+}
 
 .facebook-icon {
   color: #aeafb4;

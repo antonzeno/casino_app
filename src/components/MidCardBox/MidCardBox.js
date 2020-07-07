@@ -38,16 +38,7 @@ const MidCardBox = props => {
           )
         })}
         <Col style={{ padding: "0" }} xs={12} sm={6} md={4} lg={4} xl={2}>
-          <CardComponent
-            midCardBox={true}
-            playButton={true}
-            tagColor={"#262626"}
-            backgroundColor={"#0A0A0A"}
-            border={"2.72px solid #F4C042"}
-            fontColor={"white"}
-            imageHeight={"75%"}
-            height={"250px"}
-          />
+          <CardComponent midCardBox={true} playButton={true} />
         </Col>
         <img
           className="next"

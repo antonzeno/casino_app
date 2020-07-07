@@ -73,6 +73,17 @@ const BigCardComponent = () => {
 
           <span style={{ color: "#B7BC11" }}> 12:32:07</span>
         </Card.Text>
+
+        <Card.Text
+          style={{
+            color: "#F4C042",
+            position: "absolute",
+            top: "37%",
+            left: "42%"
+          }}
+        >
+          <span>€ </span> <span style={{ color: "#CECECE" }}>5,646.88</span>
+        </Card.Text>
       </Card.Body>
     </Card>
   )

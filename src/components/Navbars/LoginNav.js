@@ -50,6 +50,7 @@ const LoginNav = () => {
 
         <div className="mb-1">
           <Button
+            className="login-button"
             style={{
               width: "81px",
               height: "26px",
@@ -66,6 +67,7 @@ const LoginNav = () => {
             LOGIN
           </Button>
           <Button
+            className="register-button"
             style={{
               width: "107px",
               height: "26px",
