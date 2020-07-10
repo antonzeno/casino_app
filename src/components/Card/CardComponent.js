@@ -115,7 +115,7 @@ const CardComponent = props => {
             visibility: `${
               props.midCardBox && (props.cardTitle === "Lido" || props.cardTitle === "Carnaval")
                 ? "visible"
-                : "hidden" && props.bottomCardBox && props.cardTitle === "Lido"
+                : "hidden" && props.bottomCardBox && props.cardTitle === "Blood Suckers"
                 ? "visible"
                 : "hidden"
             }`

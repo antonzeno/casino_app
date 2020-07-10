@@ -24,6 +24,8 @@ class App extends Component {
     const res = await axios.get("https://staging.altechlab.com/backend/api/casino/games")
 
     this.setState({ items: res.data, loading: false })
+
+    console.log(res.data.length)
   }
   render() {
     return (

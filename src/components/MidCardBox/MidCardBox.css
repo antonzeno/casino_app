@@ -1,0 +1,5 @@
+.next[disabled],
+.prev[disabled] {
+  opacity: 0.1;
+  pointer-events: none !important;
+}

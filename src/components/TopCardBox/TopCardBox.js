@@ -7,13 +7,13 @@ const TopCardBox = props => {
   return (
     <div className="container" style={{ marginTop: "-55px" }}>
       <CardDeck>
-        {props.items.map(item => {
+        {props.items.slice(119, 124).map(item => {
           return (
             <Col key={item.id} style={{ padding: "0" }} xs={12} sm={6} md={4} lg={4} xl>
               <CardComponent
                 topCardBox={true}
                 cardImage={item.icon}
-                cardTitle={item.description.toUpperCase()}
+                cardTitle={item.name.toUpperCase()}
                 alt={item.description}
               />
             </Col>
