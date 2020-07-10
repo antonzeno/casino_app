@@ -87,6 +87,7 @@ const CardComponent = props => {
       <Card.Body>
         <Card.Title
           style={{
+            width: `${props.midCardBox ? "97%" : "100%"}`,
             fontSize: "16px",
             textAlign: "center",
             fontFamily: "Source Sans Pro",
@@ -95,18 +96,21 @@ const CardComponent = props => {
           }}
         >
           {props.cardTitle || "Poker"}
-          <span
+          <div
             style={{
               fontFamily: "FontAwesome",
               color: `${props.cardTitle === "Moon Princess" ? "#FFDB45" : "#262626"}`,
               fontSize: "22px",
-              display: `${props.midCardBox ? "inline" : "none"}`,
+              display: `${props.midCardBox ? "block" : "none"}`,
               // visibility: `${props.midCardBox ? "visible" : "hidden"}`,    // using display instead
-              float: "right"
+              float: "right",
+              position: "absolute",
+              bottom: "12%",
+              right: "5%"
             }}
           >
             &#xf02e;
-          </span>
+          </div>
         </Card.Title>
         <Card.Text
           style={{
