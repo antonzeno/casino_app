@@ -6,79 +6,31 @@ import "./LoginNav.css"
 
 const LoginNav = () => {
   return (
-    <Navbar className=" justify-content-between login-nav" style={{ backgroundColor: "#333333" }}>
+    <Navbar className="justify-content-between login-nav" style={{ backgroundColor: "#333333" }}>
       <Form inline>
         <InputGroup style={{ width: "271px" }} className="mb-1">
           <FormControl
             className="text-css"
-            style={{
-              padding: "13px",
-              borderRadius: "2px",
-              fontFamily: "FontAwesome, Open Sans, sans-serif"
-            }}
             placeholder="&#xf007;    Username"
             aria-label="Username"
             aria-describedby="basic-addon1"
           />
           <FormControl
             className="text-css"
-            style={{
-              padding: "13px",
-              borderRadius: "2px",
-              fontFamily: "FontAwesome, Open Sans, sans-serif"
-            }}
             placeholder="&#xf084;   Password"
             aria-label="Password"
             aria-describedby="basic-addon1"
           />
         </InputGroup>
-        <a
-          className="mb-1"
-          href="#help"
-          style={{
-            display: "block",
-            width: "27px",
-            height: "26px",
-            border: "1px solid black",
-            color: "white",
-            margin: "0 10px",
-            textAlign: "center"
-          }}
-        >
+        <a className="mb-1 help-link" href="#help">
           ?
         </a>
 
         <div className="mb-1">
-          <Button
-            className="login-button"
-            style={{
-              width: "81px",
-              height: "26px",
-              marginLeft: "5px",
-              padding: "5px",
-              display: "inline-flex",
-              alignItems: "center",
-              borderRadius: "2px",
-              fontWeight: "bold",
-              paddingLeft: "13px"
-            }}
-            variant="warning"
-          >
+          <Button className="login-button" variant="warning">
             LOGIN
           </Button>
-          <Button
-            className="register-button"
-            style={{
-              width: "107px",
-              height: "26px",
-              marginLeft: "10px",
-              display: "inline-flex",
-              alignItems: "center",
-              borderRadius: "2px",
-              fontWeight: "bold"
-            }}
-            variant="warning"
-          >
+          <Button className="register-button" variant="warning">
             REGISTER
           </Button>
         </div>
@@ -91,18 +43,7 @@ const LoginNav = () => {
       </div>
 
       <img src={UkFlag} alt="UK" className="mb-1" />
-      <select
-        className="mb-1"
-        name="Eng"
-        id="Eng"
-        style={{
-          backgroundColor: "transparent",
-          color: "#AEAFB4",
-          border: "none",
-          outline: "none",
-          display: "inline-block"
-        }}
-      >
+      <select className="mb-1" name="Eng" id="eng">
         <option value="uk">Eng</option>
       </select>
     </Navbar>

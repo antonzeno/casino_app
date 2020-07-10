@@ -1,5 +1,23 @@
-.next[disabled],
-.prev[disabled] {
+.next-button[disabled],
+.prev-button[disabled] {
   opacity: 0.1;
-  pointer-events: none !important;
+  pointer-events: none;
+}
+
+.prev-button {
+  width: 23px;
+  height: 38px;
+  position: absolute;
+  left: -50px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.next-button {
+  width: 23px;
+  height: 38px;
+  position: absolute;
+  right: -50px;
+  top: 40%;
+  cursor: pointer;
 }

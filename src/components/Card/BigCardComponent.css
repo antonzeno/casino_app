@@ -1,0 +1,66 @@
+.big-card {
+  height: 250px;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 0 100px;
+  position: relative;
+}
+
+.big-card-image {
+  height: 75%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: 3px solid #f4c042;
+  border-radius: 20px;
+  margin: 5px auto -15px auto;
+}
+
+.logo-image {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f5be47;
+  border-radius: 15px;
+}
+
+.big-card-title {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  font-size: 16px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.big-card-right-text {
+  position: absolute;
+  top: 79%;
+  right: 5%;
+  font-size: 16px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.big-card-centered-text {
+  color: #f4c042;
+  position: absolute;
+  top: 37%;
+  left: 42%;
+}
+#payment-text {
+  font-size: 9px;
+}
+
+#time-left {
+  color: #b7bc11;
+}
+
+#jackpot-amount {
+  color: #cecece;
+}

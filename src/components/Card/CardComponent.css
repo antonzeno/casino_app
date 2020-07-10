@@ -1,0 +1,50 @@
+.card-component {
+  height: 250px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.card-image {
+  position: relative;
+  border-radius: 23px;
+  width: 94%;
+  margin: 5px auto -15px auto;
+}
+
+.play-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 65px;
+  right: 0;
+  margin: auto;
+  width: 85px;
+}
+
+.new-item {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  width: 80px;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0 -2%;
+}
+
+.save-tag {
+  position: absolute;
+  font-size: 22px;
+  bottom: 12%;
+  right: 5%;
+  font-family: "FontAwesome";
+}
+
+.card-text {
+  text-align: center;
+  color: #f4c042;
+}

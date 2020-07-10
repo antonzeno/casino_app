@@ -30,15 +30,6 @@ const MidCardBox = props => {
           onClick={handlePrevGames}
           src={prev}
           alt="Previous"
-          style={{
-            width: "23px",
-            height: "38px",
-            position: "absolute",
-            left: "-50px",
-            top: "50%",
-            cursor: "pointer"
-            // visibility: `${firstIndex === 0 ? "hidden" : "visible"}`
-          }}
         />
 
         {props.items.slice(`${firstIndex}`, `${lastIndex}`).map(item => {
@@ -62,15 +53,6 @@ const MidCardBox = props => {
           className="next"
           src={next}
           alt="next"
-          style={{
-            width: "23px",
-            height: "38px",
-            position: "absolute",
-            right: "-50px",
-            top: "50%",
-            cursor: "pointer"
-            // visibility: `${lastIndex < 124 ? "visible" : "hidden"}`
-          }}
         />
       </CardDeck>
     </div>

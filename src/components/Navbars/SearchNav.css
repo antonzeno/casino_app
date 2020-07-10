@@ -2,10 +2,52 @@
   color: yellow !important;
 } */
 
+.search-navbar {
+  height: 62px !important;
+  background-color: #333333 !important;
+}
+.search-navbar-brand {
+  font-size: 30px !important;
+  color: #a7a6a4 !important;
+  position: relative !important;
+}
+.search-text {
+  width: 160px !important;
+  padding: 17px !important;
+  font-family: "FontAwesome", "Open Sans", sans-serif;
+}
 .search-text::placeholder {
   color: yellow !important;
 }
 
 .search-text text {
   color: yellow !important;
+}
+
+.diamond-icon {
+  position: absolute;
+  top: 38px;
+  left: 45px;
+}
+
+.big-star {
+  position: absolute;
+  top: -3px;
+  left: -15px;
+}
+
+.medium-star {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
+
+.small-star {
+  position: absolute;
+  top: 40px;
+  left: -14px;
+}
+
+.search-nav-name {
+  font-family: "Oswald", sans-serif;
 }

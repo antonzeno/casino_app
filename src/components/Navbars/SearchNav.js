@@ -1,65 +1,34 @@
 import React from "react"
-
 import { Form, FormControl, Nav, Navbar } from "react-bootstrap"
-import "./SearchNav.css"
 
 import diamond from "../../images/diamond.png"
 import bigStar from "../../images/star1.png"
 import mediumStar from "../../images/star2.png"
 import smallStar from "../../images/star3.png"
+import "./SearchNav.css"
 
 const SearchNav = props => {
   return (
     <>
-      <Navbar style={{ height: "62px", backgroundColor: "#333333" }}>
+      <Navbar className="search-navbar">
         <div className="container">
-          <Navbar.Brand
-            href="#home"
-            style={{ fontSize: "30px", color: "#A7A6A4", position: "relative" }}
-          >
+          <Navbar.Brand className="search-navbar-brand" href="#home">
             <img src={props.logo} alt="logo"></img>
-            {props.showDiamond && (
-              <img
-                src={diamond}
-                alt="diamond"
-                style={{ position: "absolute", top: "38px", left: "45px" }}
-              />
-            )}
+            {props.showDiamond && <img src={diamond} alt="diamond" className="diamond-icon" />}
 
             {props.showStars && (
               <>
-                <img
-                  src={bigStar}
-                  alt="Star"
-                  style={{ position: "absolute", top: "-3px", left: "-15px" }}
-                />
-                <img
-                  src={mediumStar}
-                  alt="Star"
-                  style={{ position: "absolute", top: "20px", left: "-20px" }}
-                />
-                <img
-                  src={smallStar}
-                  alt="Star"
-                  style={{ position: "absolute", top: "40px", left: "-14px" }}
-                />
+                <img src={bigStar} alt="Star" className="big-star" />
+                <img src={mediumStar} alt="Star" className="medium-star" />
+                <img src={smallStar} alt="Star" className="small-star" />
               </>
             )}
 
-            <span style={{ fontFamily: "Oswald, sans-serif" }}>{props.name}</span>
+            <span className="search-nav-name">{props.name}</span>
           </Navbar.Brand>
           <Nav className="mr-auto"></Nav>
           <Form inline>
-            <FormControl
-              type="text"
-              placeholder="&#xF002;"
-              className="search-text mr-sm-2"
-              style={{
-                width: "160px",
-                padding: "17px",
-                fontFamily: "FontAwesome, Open Sans, sans-serif"
-              }}
-            />
+            <FormControl type="text" placeholder="&#xF002;" className="search-text mr-sm-2" />
           </Form>
         </div>
       </Navbar>

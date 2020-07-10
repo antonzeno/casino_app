@@ -33,11 +33,55 @@ input {
   font-size: 20.5px;
   cursor: pointer;
 }
-
+.text-css {
+  padding: 13px;
+  border-radius: 2px;
+  font-family: "FontAwesome", "Open Sans", sans-serif;
+}
 .text-css::placeholder {
   color: white !important;
 }
 
 .text-css input {
   color: white !important;
+}
+
+.help-link {
+  display: block;
+  width: 27px;
+  height: 26px;
+  border: 1px solid black;
+  color: white;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.login-button {
+  width: 81px;
+  height: 26px;
+  margin-left: 5px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: bold;
+  padding-left: 13px;
+}
+
+.register-button {
+  width: 107px;
+  height: 26px;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+#eng {
+  background-color: transparent;
+  color: #aeafb4;
+  border: none;
+  outline: none;
+  display: inline-block;
 }

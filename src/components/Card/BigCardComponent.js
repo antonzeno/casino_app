@@ -2,87 +2,27 @@ import React from "react"
 import { Card } from "react-bootstrap"
 import game from "../../images/game.png"
 import gameLogo from "../../images/image.png"
+import "./BigCardComponent.css"
 
 const BigCardComponent = () => {
   return (
-    <Card
-      className="mb-4"
-      style={{
-        height: "250px",
-        background: "transparent",
-        borderRadius: "30px",
-        cursor: "pointer",
-        border: "none",
-        padding: "0 100px",
-        position: "relative"
-      }}
-    >
-      <Card.Img
-        variant="top"
-        src={game}
-        style={{
-          height: "75%",
-          position: "absolute",
-          width: "100%",
-          left: "0",
-          border: "3px solid #F4C042",
-          borderRadius: "20px",
-          margin: "5px auto -15px auto"
-        }}
-      />
+    <Card className="mb-4 big-card">
+      <Card.Img variant="top" src={game} className="big-card-image" />
 
-      <img
-        src={gameLogo}
-        alt="Logo"
-        style={{
-          position: "absolute",
-          top: "-20px",
-          left: "0",
-          right: "0",
-          marginLeft: "auto",
-          marginRight: "auto",
-          border: "2px solid #F5BE47",
-          borderRadius: "15px"
-        }}
-      />
+      <img src={gameLogo} alt="Logo" className="logo-image" />
       <Card.Body>
-        <Card.Title
-          style={{
-            position: "absolute",
-            top: "80%",
-            left: "5%",
-            fontSize: "16px",
-            color: "white",
-            fontFamily: "Source Sans Pro, sans-serif"
-          }}
-        >
-          <span>Daily JACKPOT</span>{" "}
+        <Card.Title className="big-card-title">
+          <span>Daily JACKPOT</span>
         </Card.Title>
 
-        <Card.Text
-          style={{
-            position: "absolute",
-            top: "79%",
-            right: "5%",
-            fontSize: "16px",
-            color: "white",
-            fontFamily: "Source Sans Pro, sans-serif"
-          }}
-        >
-          <span style={{ fontSize: "9px" }}>MUST PAY WITHIN: </span>
+        <Card.Text className="big-card-right-text">
+          <span id="payment-text">MUST PAY WITHIN: </span>
 
-          <span style={{ color: "#B7BC11" }}> 12:32:07</span>
+          <span id="time-left"> 12:32:07</span>
         </Card.Text>
 
-        <Card.Text
-          style={{
-            color: "#F4C042",
-            position: "absolute",
-            top: "37%",
-            left: "42%"
-          }}
-        >
-          <span>€ </span> <span style={{ color: "#CECECE" }}>5,646.88</span>
+        <Card.Text className="big-card-centered-text">
+          <span>€ </span> <span id="jackpot-amount">5,646.88</span>
         </Card.Text>
       </Card.Body>
     </Card>
