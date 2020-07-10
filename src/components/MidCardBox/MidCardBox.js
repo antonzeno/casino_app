@@ -8,8 +8,8 @@ import prev from "../../images/prev.png"
 import next from "../../images/next.png"
 
 const MidCardBox = props => {
-  let [firstIndex, setFirstIndex] = useState(0)
-  let [lastIndex, setLastIndex] = useState(6)
+  let [firstIndex, setFirstIndex] = useState(118)
+  let [lastIndex, setLastIndex] = useState(124)
 
   const handleNextGames = e => {
     setFirstIndex((firstIndex += 6))
@@ -26,7 +26,7 @@ const MidCardBox = props => {
       <CardDeck style={{ position: "relative" }}>
         <img
           className="prev"
-          disabled={lastIndex < 7 ? true : false}
+          disabled={firstIndex === 4 ? true : false}
           onClick={handlePrevGames}
           src={prev}
           alt="Previous"
